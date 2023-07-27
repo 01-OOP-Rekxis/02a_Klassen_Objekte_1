@@ -2,9 +2,9 @@ package com.cc.java;
 
 public class Cat {
 
-    public String firstName;
-    public String furColor;
-    public int age;
+    private String firstName;
+    private String furColor;
+    private int age;
 
     public Cat(String firstName, String furColor, int age) {
         this.firstName = firstName;
@@ -12,12 +12,30 @@ public class Cat {
         this.age = age;
     }
 
-    public String tellYourName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public void changeName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
+    public String getFurColor() {
+        return furColor;
+    }
+
+    public void setFurColor(String furColor) {
+        this.furColor = furColor;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    
     
 }
