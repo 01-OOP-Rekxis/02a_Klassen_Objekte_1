@@ -13,7 +13,11 @@ public class Cat {
     }
 
     public String getFirstName() {
-        return firstName;
+        if (getPermission()) {
+            return firstName;
+        } else {
+            return "I'm afraid I can't do that";
+        }
     }
 
     public void setFirstName(String firstName) {
@@ -34,6 +38,10 @@ public class Cat {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    private boolean getPermission() {
+        return true;
     }
 
     
