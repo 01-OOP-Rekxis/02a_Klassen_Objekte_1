@@ -4,34 +4,23 @@ public class App {
 
     public static void main(String[] args) {
 
-        Cat cat1 = new Cat();
+        // Instanziierung mit custom construktor
+        Cat cat1 = new Cat("Grizabella", "white", 29);
 
-        // Wertzuweisung
-        cat1.firstName = "Grizabella";
-        cat1.furColor = "white";
-        cat1.age = 29;
-
-        output(cat1.firstName);
+        // Ausgabe
+        output(cat1.tellYourName());
         output(cat1.furColor);
-
-        // .. was nicht passt, wird passend gemacht..
-        // .. Typkonvertierung
-
+        // Typkonvertierung int--> String
         output(Integer.toString(cat1.age));
-        output(String.valueOf(cat1.age));
-        
+
         output("-------------------");
 
-        Cat cat2 = new Cat();
+        Cat cat2 = new Cat("Alonso", "grey", 35);
 
-        cat2.firstName = "Alonso";
-        cat2.furColor = "grey";
-        cat2.age = 35;
-
-        output(cat2.firstName);
+        output(cat2.tellYourName());
         output(cat2.furColor);
-        output(String.valueOf(cat2.age));
-
+        // Typkonvertierung int--> String
+        output(Integer.toString(cat2.age));
     }
 
     public static void output(String outputData) {
