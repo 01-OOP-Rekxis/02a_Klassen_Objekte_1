@@ -23,7 +23,7 @@ public class App {
 
     }
 
-    public static void output(String outputData) {
+    private static void output(String outputData) {
         System.out.println(outputData);
     }
 }

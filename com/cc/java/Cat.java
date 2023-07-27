@@ -20,16 +20,8 @@ public class Cat {
         }
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
     public String getFurColor() {
         return furColor;
-    }
-
-    public void setFurColor(String furColor) {
-        this.furColor = furColor;
     }
 
     public int getAge() {
@@ -40,10 +32,12 @@ public class Cat {
         this.age = age;
     }
 
+    public void setFurColor(String furColor) {
+        this.furColor = furColor;
+    }
+
     private boolean getPermission() {
         return true;
     }
 
-    
-    
 }
